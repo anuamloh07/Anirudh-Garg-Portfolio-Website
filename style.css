@@ -1,0 +1,57 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-style:italic;
+    border:5px solid navy;
+    }
+
+.text{
+    color: black;
+    font-size:20px;
+    font-weight: 50;
+    font-style:italic;
+    width:vw;
+    margin: 200 300 100 200;
+}
+
+.subheadings{
+    color: white;
+    font-style:normal;
+    font-size:15px;
+    font-weight:40;
+}
+
+.about{
+    color: purple;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+}
+
+.headers{
+    font-style:italic;
+    font-size: 25px;
+    color:darkgreen;
+}
+
+.image{
+    width:400px;
+    height:auto;
+    margin-left: 500px;
+    border:3px solid navy;
+}
+
+.image1{
+    margin-left: 80px;
+    width:600px;
+
+}
+
+.image-overlay{
+    background-image: url("1685345282047.png");
+    /* width:500px; */
+    margin-left:00px ;
+    /* height:auto; */
+    background-repeat: no-repeat;
+}
