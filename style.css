@@ -1,4 +1,6 @@
 h1{
+    position: relative;
+    margin-top: 15px;;
     color: blue;
     text-align: center;
     font-style:italic;
@@ -43,15 +45,47 @@ h1{
 }
 
 .image1{
-    margin-left: 80px;
-    width:600px;
+    position:absolute;
+    margin-top: 700px;
+    margin-left: 850px;
+    height:1200px;
+    width:800px;
 
 }
 
-.image-overlay{
-    background-image: url("1685345282047.png");
-    /* width:500px; */
-    margin-left:00px ;
-    /* height:auto; */
-    background-repeat: no-repeat;
+
+.container{
+    /* border:1px solid black; */
+    position: relative;
+    margin-left: 1180px;
+    margin-top:5px;
+    font-size:larger;
+    
+
 }
+#home{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    /* margin-left: 1190px; */
+}
+#gallery{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+#about{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+#contact{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+
+
