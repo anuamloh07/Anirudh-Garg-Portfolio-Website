@@ -37,6 +37,22 @@ h1{
     color:darkgreen;
 }
 
+.social{
+    position: relative;
+    margin-left: 500px;
+    font-size: x-large;
+}
+/* #insta{
+    position: relative;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+#linkedin{
+    position: relative;
+    margin-left: 800px;
+    margin-top: 10px;
+} */
+
 .image{
     width:400px;
     height:auto;
