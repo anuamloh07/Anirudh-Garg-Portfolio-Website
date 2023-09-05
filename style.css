@@ -1,3 +1,13 @@
+body{
+    background-color: lightyellow;
+    opacity: 1000%;
+    background-image: url("https://wallpapercave.com/wp/wp3243951.jpg");
+    background-position: center;
+    background-size: 1400px;
+    background-attachment: scroll;
+
+}
+
 h1{
     position: relative;
     margin-top: 15px;;
@@ -9,10 +19,21 @@ h1{
 
 .text{
     color: black;
-    font-size:20px;
+    font-size:30px;
     font-weight: 50;
     font-style:italic;
     width:vw;
+    margin-left:45%;
+    margin: 200 300 100 200;
+}
+
+.text2{
+    color: black;
+    font-size:40px;
+    font-weight: 50;
+    font-style:italic;
+    width:vw;
+    margin-left:50%;
     margin: 200 300 100 200;
 }
 
@@ -23,41 +44,52 @@ h1{
     font-weight:40;
 }
 
-.about{
+.headings{
     color: purple;
     font-weight: 100;
     font-style: oblique;
-    font-size: 30px;
-    text-align: center;
+    font-size: 40px;
+    text-align: left;
+    margin:5%;
+    font-weight: bolder;
+    text-decoration: underline;
 }
-
+/* 
 .headers{
     font-style:italic;
     font-size: 25px;
     color:darkgreen;
-}
-
-.social{
-    position: relative;
-    margin-left: 500px;
-    font-size: x-large;
-}
-/* #insta{
-    position: relative;
-    margin-left: 500px;
-    margin-top: 10px;
-}
-#linkedin{
-    position: relative;
-    margin-left: 800px;
-    margin-top: 10px;
 } */
 
 .image{
     width:400px;
     height:auto;
-    margin-left: 500px;
+    margin-left: 40%;
     border:3px solid navy;
+}
+#about-image{
+    height: 700px;
+    width:auto;
+    margin-left: 5%;
+    margin-top: 0%;
+    position:absolute;
+
+    border: 3px solid navy;
+    padding:10px;
+}
+
+#books{
+    position: absolute;
+    margin-left: 0%;
+    margin-top:3%;
+    height:400px;
+}
+
+#experience{
+    position: absolute;
+    margin-left: 2%;
+    margin-top:5%;
+    width: fit-content;
 }
 
 .image1{
@@ -69,9 +101,15 @@ h1{
 
 }
 
+#purple-text{
+    color:purple;
+}
+#navy-blue{
+    color:navy;
+}
+
 
 .container{
-    /* border:1px solid black; */
     position: relative;
     margin-left: 1180px;
     margin-top:5px;
@@ -79,57 +117,266 @@ h1{
     
 
 }
-#home{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    /* margin-left: 1190px; */
-}
-#gallery{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+
+/* NAVBAR */
+
+.logo{
+    width: 20%;
+    margin: 0%;
 }
 
-#about{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+nav li{
+    padding: 0px 12px;
+    display: flex;
+    list-style: none;
 }
 
-#contact{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+nav{
+    display: flex;
+    background-color: grey;
+    border-radius: 30px;
 }
 
-.create-account{
-    font-size: xx-large;
+.navbar li, a{
+    float:left;
+    margin:0px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+nav ul li a:hover{
+    color:white;
+    font-weight: bolder;
+    text-decoration: underline;
+    transform: scale(1.1);
+    padding: 5px;
+}
+
+#search{
+    float: right;
+    border: 2px solid white;
+    font-size: large;
+    padding: 16px solid black;
+}
+
+/* TYPEWRITER ANIMATION */
+
+.container{
+    display: inline-block;
+    margin-left: 20%;
+    font-size: 2.6rem;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+
+}
+
+.typewriter-name{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 2.6rem;
+    width: 0;
+    animation: 
+      typing 1s steps(20, end) forwards,
+      blink .8s infinite;
+}
+
+
+/* PROJECTS PAGE */
+
+#stocky{
+    display: inline-block;
+    width:33%;
+    height:400px;
+    margin-left:0px;
+    margin-top: 0px;
+}
+
+#stocky-description{
+    margin-left: 0%;
+    margin-right: 67%;
+    margin-top:0%;
+}
+
+#converto{
+    display: inline-block;
+    width:33%;
+    height:400px;
+}
+#converto-description{
+    margin-left: 34%;
+    margin-right: 33%;
+    margin-top:0%;
+}
+
+#todo{
+    display: inline-block;
+    width:33%;
+    height:400px;
+}
+#todo-description{
+    margin-left: 68%;
+    margin-right: 0%;
+}
+
+#g7fitness{
+    /* position: absolute; */
+    width:33%;
+    height:400px;
+    margin-top:50px;
+    margin-left: 480px;
+}
+#g7fitness-description{
+    margin-left: 35%;
+    margin-right: 33%;
+}
+
+.video{
+    margin-left:30%;
+}
+
+#glimpse{
+    color: purple;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* demo, github repo buttons */
+#demo-stocky{
+    position: absolute;
+    margin-left: 100px;
+    margin-top:10px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+#github-stocky{
+    position: absolute;
+    margin-left: 250px;
+    margin-top:10px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#demo-converto{
+    position:absolute;
+    margin-left: 600px;
+    margin-top: 10px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+#github-converto{
+    position:absolute;
+    margin-left: 750px;
+    margin-top: 10px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#demo-todo{
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 10px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+#github-todo{
+    position: absolute;
+    margin-left: 1250px;
+    margin-top: 10px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+#demo-g7fitness{
+    position: absolute;
+    margin-left: 600px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+#github-g7fitness{
+    /* position: absolute; */
+    margin-left: 750px;
+    background-color: white;
+    color:green;
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+#demo-stocky:hover,#demo-g7fitness:hover,#demo-converto:hover,#demo-todo:hover,#github-stocky:hover,#github-converto:hover,#github-g7fitness:hover,#github-todo:hover{
+    transform:scale(1.2);
+    background-color: purple;
+    color: white;
     font-weight: bolder;
 }
 
+/* CONTACT US */
+input,textarea{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 50%;
+    width:400px;
 
-@media only screen and (min-width: 200px) and (max-width: 600px) {
-    .container{
-        width:100%;
-        margin:0%;
-    }
+    border:2px solid black;
+}
+#anu{
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 0%;
 
-    .image1{
-        position:relative;
-        width:100%;
-        margin:0%;
-    }
+    border:3px solid navy;
+    background-color: white;
+}
 
-    .text{
-        font-size: larger;
-    }
+#insta{
+    position: absolute;
+    margin-left:25%;
+    margin-top:5%;
+    font-size: large;
+}
 
-    .image{
-        width:96%;
-        margin:2%;
-        height:600px;
-    }
+#linkedin{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 12%;
+    font-size:large;
+}
+#github{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 18%;
+    font-size:large;
+    width:5px;
+
+}
+#img-text{
+    color:black;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+@media only screen and (min-width: 200px) and (max-width: 800px) {
 
     .social{
         width:100%;
@@ -137,7 +384,106 @@ h1{
     }
     .video{
         width:100%;
+        margin-left: 0%;
+    }
+
+    /* .logo{
+        width:80%;
+        margin-left: 10%;
+    } */
+    .container{
+        font-size:larger;
+        width: 100%;
+    }
+    .typewriter-name{
+        font-size:large;
+        width: 100%;
+    }
+    .image{
+        width:60%;
+        margin-left: 20%;
+        height: auto;
+    }
+
+    #about-image{
+        position:relative;
+        /* width:70%; */
+        margin-left:20%;
+    }
+
+    .text{
+        font-size: large;
+        text-align: justify;
+        margin-left: 0px;
+    }
+
+    #books,#experience{
+        position: relative;
+        width:90%;
+        margin-left: 5%;
+    }
+
+    .text2{
+        font-size: x-large;
+        text-align: left;
+        margin: 0%;
+        font-weight:bold ;
+    }
+    #stocky,#g7fitness,#todo,#converto{
+        width:32.5%;
+        height: 140px;
+    }
+    #g7fitness{
+        width:32.5%;
+        margin-left:33%;
+        height: 140px;
+    }
+    #demo-stocky,#demo-todo,#demo-converto,#github-stocky,#github-todo,#github-converto{
+        position: relative;
+        margin-top:1%;
+        margin-left: 0%;
+        font-size: 9px;
+    }
+    #demo-g7fitness{
+        position: relative;
+        margin-top:1%;
+        margin-left:33%;
+        font-size: 10px;
+    }
+    #github-g7fitness{
+        position: relative;
+        margin-top:1%;
+        margin-left:0%;
+        font-size: 10px;
+    }
+
+    /* Responsive navbar */
+    .logo{
+        width: 40%;
+    }
+
+    input,textarea{
+        width: 100%;
+        margin-left: 0%;
+        border:2px solid black;
+    }
+
+    #anu{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #insta,#linkedin,#github{
+        position: relative;
+        width:30%;
+        margin-left:0%;
+        margin-top:200%;
+    }
+    .form{
+        border:3px solid black;
+        background-color: white;
+        width:100%;
+        padding:10px;
+
     }
 }
-
-
