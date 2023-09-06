@@ -389,10 +389,12 @@ input,textarea{
     .container{
         font-size:larger;
         width: 100%;
+        margin-left:0%;
     }
     .typewriter-name{
         font-size:large;
         width: 100%;
+        margin-left:0%;
     }
     .image{
         width:60%;
