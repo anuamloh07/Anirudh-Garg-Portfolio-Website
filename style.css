@@ -28,6 +28,7 @@ h1{
 }
 
 .text2{
+    
     color: black;
     font-size:40px;
     font-weight: 50;
@@ -68,11 +69,11 @@ h1{
     border:3px solid navy;
 }
 #about-image{
-    height: 700px;
-    width:auto;
-    margin-left: 5%;
-    margin-top: 0%;
-    position:absolute;
+    display: inline-block;
+    float: left;
+    margin-left: 4%;
+    position: relative;
+    width: 400px;
 
     border: 3px solid navy;
     padding:10px;
@@ -121,8 +122,8 @@ h1{
 /* NAVBAR */
 
 .logo{
-    width: 20%;
-    margin: 0%;
+    width: 30%;
+    margin-left: 0%;
 }
 
 nav li{
@@ -146,10 +147,9 @@ nav{
 }
 
 nav ul li a:hover{
-    color:white;
-    font-weight: bolder;
-    text-decoration: underline;
-    transform: scale(1.1);
+    background-color: lightblue;
+    /* text-decoration: underline; */
+    /* transform: scale(1.1); */
     padding: 5px;
 }
 
@@ -238,9 +238,11 @@ nav ul li a:hover{
 }
 
 #glimpse{
+    display: block;
+    text-align: center;
     color: purple;
     font-size: 40px;
-    text-align: center;
+    margin-top: 30%;
     text-decoration: underline;
 }
 
@@ -336,38 +338,52 @@ input,textarea{
 
     border:2px solid black;
 }
-#anu{
-    position: absolute;
-    margin-left: 0%;
-    margin-top: 0%;
 
-    border:3px solid navy;
-    background-color: white;
+#submit{
+    margin-left:65%;
+}
+#anu{
+    display: inline-block;
+    float: inline-start;
+    position: relative;
+    width: 400px;
+
+    border: solid navy;
+    /* background-color: white; */
 }
 
 #insta{
-    position: absolute;
-    margin-left:25%;
+    position: relative;
+    margin-left:35%;
     margin-top:5%;
     font-size: large;
 }
 
 #linkedin{
-    position: absolute;
-    margin-left: 25%;
+    position: relative;
+    margin-left: 35%;
     margin-top: 12%;
     font-size:large;
 }
 #github{
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 18%;
+    position: relative;
+    margin-left: 35%;
+    margin-top: 20%;
     font-size:large;
     width:5px;
 
 }
 #img-text{
     color:black;
+}
+
+.form{
+    font-size: xx-large;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 5%;
 }
 
 @keyframes typing {
@@ -394,7 +410,6 @@ input,textarea{
     .typewriter-name{
         font-size:large;
         width: 100%;
-        margin-left:0%;
     }
     .image{
         width:60%;
@@ -403,12 +418,13 @@ input,textarea{
     }
 
     #about-image{
-        position:relative;
-        /* width:70%; */
-        margin-left:20%;
+        display: flex;
+        justify-content: center;
     }
 
     .text{
+        display: inline-block;
+        float: right;
         font-size: large;
         text-align: justify;
         margin-left: 0px;
@@ -457,7 +473,6 @@ input,textarea{
     /* Responsive navbar */
     .logo{
         width: 40%;
-        margin-left:0%;
     }
 
     input,textarea{
@@ -465,10 +480,14 @@ input,textarea{
         margin-left: 0%;
         border:2px solid black;
     }
+    #submit{
+        margin-left: 40%;
+    }
 
     #anu{
         width: 60%;
         margin-left: 20%;
+        height:auto;
     }
 
     #insta,#linkedin,#github{
